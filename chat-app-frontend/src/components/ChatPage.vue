@@ -69,13 +69,15 @@
         />
         <div class="flex gap-4">
           <button class="dark:bg-purple-600 dark:hover:bg-purple-700 cursor-pointer h-10 w-10 flex justify-center items-center rounded-full">
-            <i class="material-icons">attach_file</i>
+            <!-- <i class="material-icons">attach_file</i> -->
+            <IconPaperclip  />
           </button>
           <button
             @click="sendMessage"
             class="dark:bg-green-600 dark:hover:bg-green-700 cursor-pointer h-10 w-10 flex justify-center items-center rounded-full"
           >
-            <i class="material-icons">send</i>
+            <!-- <i class="material-icons">send</i> -->
+            <IconDeviceMobileMessage  />
           </button>
         </div>
       </div>
@@ -93,7 +95,7 @@ import { Stomp } from '@stomp/stompjs'
 import { getRoomMessages } from '../services/RoomService'
 import { baseURL } from '../config/AxiosHelper'
 import { timeAgo } from '../config/helper'
-
+import { IconPaperclip ,IconDeviceMobileMessage  } from '@tabler/icons-vue'
 const router = useRouter()
 const chatStore = useChatStore()
 const generator = new AvatarGenerator()

@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@stomp/stompjs": "^7.0.0",
+    "@tabler/icons-vue": "^3.31.0",
     "axios": "^1.8.4",
     "pinia": "^2.1.7",
     "random-avatar-generator": "^2.0.0",
